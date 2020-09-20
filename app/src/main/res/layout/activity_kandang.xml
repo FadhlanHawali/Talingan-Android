@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llNavBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/ivNavigateBack"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="20dp"
+            android:layout_margin="20dp"
+            app:srcCompat="@drawable/ic_baseline_arrow_back_ios_24" />
+
+        <TextView
+            android:id="@+id/tvSenderName"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Tambah Kandang"
+            android:fontFamily="@font/mulish_bold"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/ivAccept"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="20dp"
+            android:layout_margin="20dp"
+            app:srcCompat="@drawable/ic_baseline_done_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="@font/mulish_bold"
+            android:text="Pemantauan Harian"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mulish_light"
+            android:text="Nomor Tiang"
+            android:layout_marginLeft="20dp"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="12sp"
+            />
+
+        <EditText
+            android:id="@+id/etNomorTiang"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+            android:inputType="text"
+            android:fontFamily="@font/mulish_light"
+            android:hint="Masukkan Nomor Tiang"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mulish_light"
+            android:text="Nama Kandang"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="12sp"
+            />
+
+        <EditText
+            android:id="@+id/etNamaKandang"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+            android:inputType="text"
+            android:fontFamily="@font/mulish_light"
+            android:hint="Masukkan Nama Kandang"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mulish_light"
+            android:text="Jumlah Ayam"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="12sp"
+            />
+
+        <EditText
+            android:id="@+id/etCountAyam"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+            android:inputType="number"
+            android:fontFamily="@font/mulish_light"
+            android:hint="Masukkan Jumlah Ayam (ex : 100)"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mulish_light"
+            android:text="Jenis"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="12sp"
+            />
+
+        <EditText
+            android:id="@+id/etJenisAyam"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+            android:inputType="text"
+            android:fontFamily="@font/mulish_light"
+            android:hint="Pilih Jenis Ayam"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mulish_light"
+            android:text="Usia (hari)"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="12sp"
+            />
+
+        <EditText
+            android:id="@+id/etUsia"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+            android:inputType="text"
+            android:fontFamily="@font/mulish_light"
+            android:hint="Masukkan Usia"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mulish_light"
+            android:text="Suhu (dalam Celcius)"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="12sp"
+            />
+
+        <EditText
+            android:id="@+id/etSuhu"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="6dp"
+            android:inputType="text"
+            android:fontFamily="@font/mulish_light"
+            android:hint="Masukkan Suhu"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
